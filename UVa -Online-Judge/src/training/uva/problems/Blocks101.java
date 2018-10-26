@@ -73,6 +73,9 @@ public class Blocks101 implements Executable {
 			int rowB = findInMatrix(blockRows, blockB);
 			if (rowA == rowB)
 				continue;
+			
+			// If blockA or blockB isn't found
+			if(rowA==-1 || rowB==-1) break;		
 
 			// Execute move command
 			executeMove(blockRows,command1, command2, blockA, rowA, blockB, rowB);
