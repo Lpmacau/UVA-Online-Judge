@@ -74,7 +74,7 @@ public class Blocks101 implements Executable {
 			if (rowA == rowB)
 				continue;
 			
-			// If blockA or blockB isn't found
+			// If blockA or blockB isn't found break execution
 			if(rowA==-1 || rowB==-1) break;		
 
 			// Execute move command
