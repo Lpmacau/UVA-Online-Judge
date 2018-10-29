@@ -1,13 +1,13 @@
 package training.uva.config;
 
-import training.uva.problems.EcologicalBin102;
+import training.uva.problems.StackingBoxes103;
 
 public class EntryPoint {
 
 	public static void main(String args[]) {
 		
 		
-		EcologicalBin102 t = new EcologicalBin102();
+		StackingBoxes103 t = new StackingBoxes103();
 		t.run();
 		
 	}

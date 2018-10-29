@@ -114,7 +114,7 @@ public class EcologicalBin102 implements Executable {
 	private int moveBottlesTo(int[][] bottles, int i, int j) {
 		int res = 0;
 		switch (i) {
-		// Cima
+		// Top
 		case 0:
 			res += bottles[i + 1][j] + bottles[i + 2][j];
 			bottles[i][j] += bottles[i + 1][j] + bottles[i + 2][j];
@@ -122,7 +122,7 @@ public class EcologicalBin102 implements Executable {
 			bottles[i + 2][j] = 0;
 			break;
 
-		// Meio
+		// Mid
 		case 1:
 			res += bottles[i - 1][j] + bottles[i + 1][j];
 			bottles[i][j] += bottles[i - 1][j] + bottles[i + 1][j];
@@ -130,7 +130,7 @@ public class EcologicalBin102 implements Executable {
 			bottles[i + 1][j] = 0;
 			break;
 
-		// Baixo
+		// Bot
 		case 2:
 			res += bottles[i - 1][j] + bottles[i - 2][j];
 			bottles[i][j] += bottles[i - 1][j] + bottles[i - 2][j];
